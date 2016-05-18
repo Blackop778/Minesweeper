@@ -1,5 +1,6 @@
 package blackop778.minesweeper;
 
+import java.awt.Color;
 import java.awt.Graphics;
 
 public class Cell
@@ -17,7 +18,8 @@ public class Cell
 
 	public void drawSquare(Graphics g, int x, int y)
 	{
-
+		g.setColor(Color.LIGHT_GRAY);
+		g.drawRect(x - 60, y - 60, 5, 60);
 	}
 
 	public void drawMines(Graphics g, int x, int y)
@@ -32,9 +34,13 @@ public class Cell
 			if(!left)
 			{
 				if(!flagged)
+				{
 					flagged = true;
+				}
 				else
+				{
 					flagged = false;
+				}
 			}
 		}
 	}
