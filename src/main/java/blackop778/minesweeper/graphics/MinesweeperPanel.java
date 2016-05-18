@@ -23,7 +23,7 @@ public class MinesweeperPanel extends JPanel
 		{
 			for(int n = 0; n < 9; n++)
 			{
-				Minesweeper.board[i][n].drawSquare(g, i * 60, n * 60);
+				Minesweeper.board[i][n].drawSquare(g, (i + 1) * 60, (n + 1) * 60);
 			}
 		}
 	}

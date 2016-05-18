@@ -7,12 +7,13 @@ import blackop778.minesweeper.graphics.MinesweeperFrame;
 public abstract class Minesweeper
 {
 	public static Cell[][] board;
+	public static boolean revealAll;
 
 	public static void main(String[] args)
 	{
 		MinesweeperFrame frame = new MinesweeperFrame();
 		frame.setTitle("Minesweeper");
-		frame.setSize(540, 540);
+		frame.setSize(545, 568);
 		frame.setResizable(false);
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -24,6 +25,7 @@ public abstract class Minesweeper
 	static void startGame()
 	{
 		boolean[] mine = new boolean[81];
+		revealAll = false;
 		board = new Cell[9][9];
 		for(int i = 0; i < 81; i++)
 		{
@@ -52,6 +54,11 @@ public abstract class Minesweeper
 	}
 
 	static void checkWin()
+	{
+
+	}
+
+	static void loss()
 	{
 
 	}
