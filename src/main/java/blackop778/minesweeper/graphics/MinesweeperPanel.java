@@ -57,7 +57,7 @@ public class MinesweeperPanel extends JPanel
 		if(Minesweeper.status.equals("Normal"))
 		{
 			g.drawString(String.valueOf(10 - Minesweeper.flags)
-					+ " flags left. Right click to reveal a square, Left click to flag.", 10, 60);
+					+ " flags left. Left click to reveal a square, Right click to flag.", 10, 60);
 		}
 		else if(Minesweeper.status.equals("Win"))
 		{
