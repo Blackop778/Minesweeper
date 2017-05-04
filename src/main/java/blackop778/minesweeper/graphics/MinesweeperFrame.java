@@ -5,11 +5,9 @@ import java.awt.HeadlessException;
 import javax.swing.JFrame;
 
 @SuppressWarnings("serial")
-public class MinesweeperFrame extends JFrame
-{
+public class MinesweeperFrame extends JFrame {
 
-	public MinesweeperFrame() throws HeadlessException
-	{
-		add(new MinesweeperPanel());
-	}
+    public MinesweeperFrame() throws HeadlessException {
+	add(new MinesweeperPanel());
+    }
 }
