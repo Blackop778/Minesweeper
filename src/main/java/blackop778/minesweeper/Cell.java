@@ -74,6 +74,9 @@ public class Cell {
 	g.drawLine(x + 15, y + 14, x + 45, y + 44);
 	g.drawLine(x + 14, y + 15, x + 44, y + 45);
 	// Bottom left to top right
+	g.drawLine(x + 14, y + 45, x + 45, y + 14);
+	g.drawLine(x + 14, y + 44, x + 46, y + 14);
+	g.drawLine(x + 15, y + 45, x + 45, y + 13);
     }
 
     private void drawMineCount(Graphics g, int x, int y) {
